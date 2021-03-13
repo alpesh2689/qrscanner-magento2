@@ -1,0 +1,41 @@
+<?php
+$helper = $this->helper('Coreway\Qrscanner\Helper\Data');
+$moduleStatus = $helper->isModuleUsable();
+
+if ($moduleStatus == 1) {
+?>
+<div class="custom_qr_auth_main customer_account">
+	<div class="custom_qr_auth_inner">
+		<div class="block-content">
+		    <div class="content-data">
+		        <p><?php echo __("How to Login QR code:"); ?></p>
+		        <ul>
+		            <li><?php echo __("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."); ?></li>
+		            <li><?php echo __("At vero eos et accusamus et iusto odio"); ?></li>
+		            <li><?php echo __("On the other hand, we denounce with righteous"); ?></li>
+		            <li><?php echo __("Sed ut perspiciatis unde omnis iste natus error"); ?></li>
+		        </ul>
+		    </div>
+		    <div class="content-form loader">
+		        <form action="" method="post">
+		            <div class="field-wrap cpt_image">
+		                <div  id="data_title" class="data_title" title="register">
+		                    <div id="qrcode"></div>
+		                    <div class="content_button">
+		                        <div class="content_button_table">
+		                            <div class="content_button_tablecell">
+		                                <a id="contentbutton" value="Reload" style="display:none;"><?php echo __("Reload"); ?></a>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div id="content"></div>
+		                <input  type="hidden"  id="chklogin" value="0" />
+		            </div>
+		        </form>
+		    </div>
+		</div>
+	</div>
+</div>
+
+<?php } ?>

@@ -1,0 +1,305 @@
+//
+//  Common
+//  _____________________________________________
+
+@screen__custom__xxs: 320px;
+@screen__custom__xs: 480px;
+@screen__custom__xms: 540px;
+@screen__custom__s: 640px;
+@screen__custom__mobile: 767px;
+@screen__custom__m: 768px;
+@screen__custom__mm: 820px;
+@screen__custom__lsm: 902px;
+@screen__custom__ls: 960px;
+@screen__custom__l: 1024px;
+@screen__custom__ssl: 1102px;
+@screen__custom__sl: 1170px;
+@screen__custom__msl: 1170px;
+@screen__custom__mnl: 1202px;
+@screen__custom__ml: 1280px;
+@screen__custom__xsl: 1366px;
+@screen__custom__xml: 1396px;
+@screen__custom__xl: 1440px;
+
+& when (@media-common = true) {
+
+    //
+    //  QR Login Page Design
+    //  _____________________________________________
+
+    .custom_qr_auth_main{
+        width: 48%;
+        display: inline-block;
+        float: right;
+        &.customer_account{
+            width: 100%;
+            float:none;
+            .custom_qr_auth_inner{
+                .block-content{
+                    .content-data{
+                        width: 65%;
+                        float:left;
+                        margin-right: 5%;
+                        >ul{
+                            padding: 15px 0px 0px 18px;
+                        }
+                    }
+                    .content-form{
+                        width: 25%;
+                        float: left;
+                    }
+                }
+            }
+        }
+        .custom_qr_auth_inner{
+            width: 100%;
+            display: inline-block;
+            .block-title{
+                border-bottom: 1px solid #e8e8e8;
+                font-size: 18px;
+                margin-bottom: 15px;
+                padding-bottom: 12px;
+                width: 100%;
+                display: inline-block;
+                strong{
+                    font-weight: 500;
+                }
+            }
+            .block-content{
+                width: 100%;
+                display: inline-block;
+                .content-form{
+                    width: 38%;
+                    display: inline-block;
+                    float: left;
+                    max-width: 225px;
+                    margin-top: 5px;
+                    &.loader{
+                        background: url(../Coreway_Qrscanner/images/loadermain.gif) no-repeat;
+                        height: 225px;
+                        background-position: center;
+                        margin: 0px;
+                        form{
+                            display:none;
+                        }
+                    }
+                    form{
+                        width: 100%;
+                        display: inline-block;
+                        .field-wrap.cpt_image{
+                            width: 100%;
+                            display: inline-block;
+                            .data_title{
+                                width: 100%;
+                                display: inline-block;
+                                position: relative;
+                                #qrcode{
+                                    img{
+                                        display:none;
+                                    }
+                                }
+                                .hide.intro_hide{
+                                    opacity: 0.1;
+                                }
+                                .content_button{
+                                    position: absolute;
+                                    top: 0;
+                                    height: 100%;
+                                    display: block;
+                                    left: 0;
+                                    right: 0;
+                                    .content_button_table{
+                                        display: table;
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        .content_button_tablecell{
+                                            text-align: center;
+                                            display: table-cell;
+                                            vertical-align: middle;
+                                            #contentbutton{
+                                                border: 0px;
+                                                background: #1979c3;
+                                                color: #fff;
+                                                width: 111px;
+                                                height: 50px;
+                                                display: inline-block;
+                                                border-radius: 25px;
+                                                font-weight: 600;
+                                                text-transform: capitalize;
+                                                font-size: 14px;
+                                                line-height: 50px;
+                                                padding-top: 0px;
+                                                text-align: right;
+                                                padding-right: 37px;
+                                                box-shadow: none;
+                                                border: 0px;
+                                                cursor: pointer;
+                                                &:before{
+                                                    content: '';
+                                                    background: url(../Coreway_Qrscanner/images/Reload.png) no-repeat;
+                                                    width: 22px;
+                                                    height: 22px;
+                                                    background-size: contain;
+                                                    display: inline-block;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    bottom: 0;
+                                                    transform: translateY(-50%);
+                                                    text-align: center;
+                                                    z-index: 1;
+                                                    margin-left: -45px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .content-data{
+                    width: 55%;
+                    display: inline-block;
+                    float: right;
+                    >p{
+                        font-size: 16px;
+                        margin:0px 0px 10px 0px;
+                        padding:0px;
+                        font-weight: 600;
+                    }
+                    >ul{
+                        width: auto;
+                        display: inline-block;
+                        margin: 0px;
+                        padding: 0px 0px 0px 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+//
+//  1170px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__sl) {
+    
+    .custom_qr_auth_main .custom_qr_auth_inner .block-content{
+        .content-form{
+            width: 225px;
+        }
+        .content-data{
+            width: 50%;
+        }
+    }
+
+}
+
+//
+//  1024px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__l) {
+    
+    .custom_qr_auth_main{
+        &.customer_account .custom_qr_auth_inner .block-content{
+            .content-data{
+                width: 55%;
+            }
+            .content-form{
+                width: 225px;
+            }
+        }
+        .custom_qr_auth_inner .block-content .content-data{
+            width: 46%;
+        }
+    }
+
+}
+
+//
+//  960px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__ls) {
+    
+    .custom_qr_auth_main .custom_qr_auth_inner .block-content .content-data{
+        width: 40%;
+    }
+
+}
+
+//
+//  902px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__lsm) {
+    
+    .custom_qr_auth_main{
+        &.customer_account .custom_qr_auth_inner .block-content .content-data{
+            margin-top: 0px;
+        }
+        .custom_qr_auth_inner .block-content .content-data{
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+
+}
+
+//
+//  767px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__mobile) {
+    
+    .custom_qr_auth_main{
+        width: 100%;
+        margin-bottom: 25px;
+        .custom_qr_auth_inner .block-content .content-data{
+            width: 65%;
+            margin-top: 0px;
+        }
+    }
+
+}
+
+//
+//  640px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__s) {
+    
+    .custom_qr_auth_main{
+        .custom_qr_auth_inner .block-content .content-data{
+            width: 56%;
+        }
+    }
+
+}
+
+//
+//  540px
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__custom__xms) {
+    
+    .custom_qr_auth_main{
+        .custom_qr_auth_inner .block-content .content-data{
+            width: 100%;
+            margin-top:25px;
+        }
+    }
+
+    .custom_qr_auth_main.customer_account .custom_qr_auth_inner .block-content .content-data{
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+}

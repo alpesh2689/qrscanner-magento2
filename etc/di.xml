@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * Coreway_Qrscanner Module
+ *
+ * @package     Coreway_Qrscanner
+ * @author      Coreway Solution
+ *
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="\Magento\Framework\View\Element\Html\Links">
+	    <plugin name="account_tab_plugin" type="Coreway\Qrscanner\Plugin\ManageStatus" sortOrder="10" disabled="false"  />
+	</type>
+</config>

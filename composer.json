@@ -1,0 +1,25 @@
+{
+  "name": "coreway/module-qrscanner",
+  "description": "A Magento 2 module for Login User Using QR Scanner",
+  "type": "magento2-module",
+  "version": "1.0.1",
+  "license": [
+    "GPL-3.0"
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.1.4|~7.2.0"
+  },
+  "authors": [
+    {
+      "name": "Coreway Solution",
+      "email": "info@corewaysolution.com",
+      "homepage": "https://www.corewaysolution.com/"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Coreway\\Qrscanner\\": ""
+    }
+  }
+}
